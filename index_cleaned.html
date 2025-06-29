@@ -1,0 +1,172 @@
+<html lang="en-US"><head><style type="text/css">:root{--toastify-color-light: #fff;--toastify-color-dark: #121212;--toastify-color-info: #3498db;--toastify-color-success: #07bc0c;--toastify-color-warning: #f1c40f;--toastify-color-error: hsl(6, 78%, 57%);--toastify-color-transparent: rgba(255, 255, 255, .7);--toastify-icon-color-info: var(--toastify-color-info);--toastify-icon-color-success: var(--toastify-color-success);--toastify-icon-color-warning: var(--toastify-color-warning);--toastify-icon-color-error: var(--toastify-color-error);--toastify-container-width: fit-content;--toastify-toast-width: 320px;--toastify-toast-offset: 16px;--toastify-toast-top: max(var(--toastify-toast-offset), env(safe-area-inset-top));--toastify-toast-right: max(var(--toastify-toast-offset), env(safe-area-inset-right));--toastify-toast-left: max(var(--toastify-toast-offset), env(safe-area-inset-left));--toastify-toast-bottom: max(var(--toastify-toast-offset), env(safe-area-inset-bottom));--toastify-toast-background: #fff;--toastify-toast-padding: 14px;--toastify-toast-min-height: 64px;--toastify-toast-max-height: 800px;--toastify-toast-bd-radius: 6px;--toastify-toast-shadow: 0px 4px 12px rgba(0, 0, 0, .1);--toastify-font-family: sans-serif;--toastify-z-index: 9999;--toastify-text-color-light: #757575;--toastify-text-color-dark: #fff;--toastify-text-color-info: #fff;--toastify-text-color-success: #fff;--toastify-text-color-warning: #fff;--toastify-text-color-error: #fff;--toastify-spinner-color: #616161;--toastify-spinner-color-empty-area: #e0e0e0;--toastify-color-progress-light: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);--toastify-color-progress-dark: #bb86fc;--toastify-color-progress-info: var(--toastify-color-info);--toastify-color-progress-success: var(--toastify-color-success);--toastify-color-progress-warning: var(--toastify-color-warning);--toastify-color-progress-error: var(--toastify-color-error);--toastify-color-progress-bgo: .2}.Toastify__toast-container{z-index:var(--toastify-z-index);-webkit-transform:translate3d(0,0,var(--toastify-z-index));position:fixed;width:var(--toastify-container-width);box-sizing:border-box;color:#fff;display:flex;flex-direction:column}.Toastify__toast-container--top-left{top:var(--toastify-toast-top);left:var(--toastify-toast-left)}.Toastify__toast-container--top-center{top:var(--toastify-toast-top);left:50%;transform:translate(-50%);align-items:center}.Toastify__toast-container--top-right{top:var(--toastify-toast-top);right:var(--toastify-toast-right);align-items:end}.Toastify__toast-container--bottom-left{bottom:var(--toastify-toast-bottom);left:var(--toastify-toast-left)}.Toastify__toast-container--bottom-center{bottom:var(--toastify-toast-bottom);left:50%;transform:translate(-50%);align-items:center}.Toastify__toast-container--bottom-right{bottom:var(--toastify-toast-bottom);right:var(--toastify-toast-right);align-items:end}.Toastify__toast{--y: 0;position:relative;touch-action:none;width:var(--toastify-toast-width);min-height:var(--toastify-toast-min-height);box-sizing:border-box;margin-bottom:1rem;padding:var(--toastify-toast-padding);border-radius:var(--toastify-toast-bd-radius);box-shadow:var(--toastify-toast-shadow);max-height:var(--toastify-toast-max-height);font-family:var(--toastify-font-family);z-index:0;display:flex;flex:1 auto;align-items:center;word-break:break-word}@media only screen and (max-width: 480px){.Toastify__toast-container{width:100vw;left:env(safe-area-inset-left);margin:0}.Toastify__toast-container--top-left,.Toastify__toast-container--top-center,.Toastify__toast-container--top-right{top:env(safe-area-inset-top);transform:translate(0)}.Toastify__toast-container--bottom-left,.Toastify__toast-container--bottom-center,.Toastify__toast-container--bottom-right{bottom:env(safe-area-inset-bottom);transform:translate(0)}.Toastify__toast-container--rtl{right:env(safe-area-inset-right);left:initial}.Toastify__toast{--toastify-toast-width: 100%;margin-bottom:0;border-radius:0}}.Toastify__toast-container[data-stacked=true]{width:var(--toastify-toast-width)}.Toastify__toast--stacked{position:absolute;width:100%;transform:translate3d(0,var(--y),0) scale(var(--s));transition:transform .3s}.Toastify__toast--stacked[data-collapsed] .Toastify__toast-body,.Toastify__toast--stacked[data-collapsed] .Toastify__close-button{transition:opacity .1s}.Toastify__toast--stacked[data-collapsed=false]{overflow:visible}.Toastify__toast--stacked[data-collapsed=true]:not(:last-child)>*{opacity:0}.Toastify__toast--stacked:after{content:"";position:absolute;left:0;right:0;height:calc(var(--g) * 1px);bottom:100%}.Toastify__toast--stacked[data-pos=top]{top:0}.Toastify__toast--stacked[data-pos=bot]{bottom:0}.Toastify__toast--stacked[data-pos=bot].Toastify__toast--stacked:before{transform-origin:top}.Toastify__toast--stacked[data-pos=top].Toastify__toast--stacked:before{transform-origin:bottom}.Toastify__toast--stacked:before{content:"";position:absolute;left:0;right:0;bottom:0;height:100%;transform:scaleY(3);z-index:-1}.Toastify__toast--rtl{direction:rtl}.Toastify__toast--close-on-click{cursor:pointer}.Toastify__toast-icon{margin-inline-end:10px;width:22px;flex-shrink:0;display:flex}.Toastify--animate{animation-fill-mode:both;animation-duration:.5s}.Toastify--animate-icon{animation-fill-mode:both;animation-duration:.3s}.Toastify__toast-theme--dark{background:var(--toastify-color-dark);color:var(--toastify-text-color-dark)}.Toastify__toast-theme--light,.Toastify__toast-theme--colored.Toastify__toast--default{background:var(--toastify-color-light);color:var(--toastify-text-color-light)}.Toastify__toast-theme--colored.Toastify__toast--info{color:var(--toastify-text-color-info);background:var(--toastify-color-info)}.Toastify__toast-theme--colored.Toastify__toast--success{color:var(--toastify-text-color-success);background:var(--toastify-color-success)}.Toastify__toast-theme--colored.Toastify__toast--warning{color:var(--toastify-text-color-warning);background:var(--toastify-color-warning)}.Toastify__toast-theme--colored.Toastify__toast--error{color:var(--toastify-text-color-error);background:var(--toastify-color-error)}.Toastify__progress-bar-theme--light{background:var(--toastify-color-progress-light)}.Toastify__progress-bar-theme--dark{background:var(--toastify-color-progress-dark)}.Toastify__progress-bar--info{background:var(--toastify-color-progress-info)}.Toastify__progress-bar--success{background:var(--toastify-color-progress-success)}.Toastify__progress-bar--warning{background:var(--toastify-color-progress-warning)}.Toastify__progress-bar--error{background:var(--toastify-color-progress-error)}.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--success,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--error{background:var(--toastify-color-transparent)}.Toastify__close-button{color:#fff;position:absolute;top:6px;right:6px;background:transparent;outline:none;border:none;padding:0;cursor:pointer;opacity:.7;transition:.3s ease;z-index:1}.Toastify__toast--rtl .Toastify__close-button{left:6px;right:unset}.Toastify__close-button--light{color:#000;opacity:.3}.Toastify__close-button>svg{fill:currentColor;height:16px;width:14px}.Toastify__close-button:hover,.Toastify__close-button:focus{opacity:1}@keyframes Toastify__trackProgress{0%{transform:scaleX(1)}to{transform:scaleX(0)}}.Toastify__progress-bar{position:absolute;bottom:0;left:0;width:100%;height:100%;z-index:1;opacity:.7;transform-origin:left}.Toastify__progress-bar--animated{animation:Toastify__trackProgress linear 1 forwards}.Toastify__progress-bar--controlled{transition:transform .2s}.Toastify__progress-bar--rtl{right:0;left:initial;transform-origin:right;border-bottom-left-radius:initial}.Toastify__progress-bar--wrp{position:absolute;overflow:hidden;bottom:0;left:0;width:100%;height:5px;border-bottom-left-radius:var(--toastify-toast-bd-radius);border-bottom-right-radius:var(--toastify-toast-bd-radius)}.Toastify__progress-bar--wrp[data-hidden=true]{opacity:0}.Toastify__progress-bar--bg{opacity:var(--toastify-color-progress-bgo);width:100%;height:100%}.Toastify__spinner{width:20px;height:20px;box-sizing:border-box;border:2px solid;border-radius:100%;border-color:var(--toastify-spinner-color-empty-area);border-right-color:var(--toastify-spinner-color);animation:Toastify__spin .65s linear infinite}@keyframes Toastify__bounceInRight{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(3000px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}@keyframes Toastify__bounceOutRight{20%{opacity:1;transform:translate3d(-20px,var(--y),0)}to{opacity:0;transform:translate3d(2000px,var(--y),0)}}@keyframes Toastify__bounceInLeft{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(-3000px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}@keyframes Toastify__bounceOutLeft{20%{opacity:1;transform:translate3d(20px,var(--y),0)}to{opacity:0;transform:translate3d(-2000px,var(--y),0)}}@keyframes Toastify__bounceInUp{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(0,3000px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translateZ(0)}}@keyframes Toastify__bounceOutUp{20%{transform:translate3d(0,calc(var(--y) - 10px),0)}40%,45%{opacity:1;transform:translate3d(0,calc(var(--y) + 20px),0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes Toastify__bounceInDown{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(0,-3000px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}@keyframes Toastify__bounceOutDown{20%{transform:translate3d(0,calc(var(--y) - 10px),0)}40%,45%{opacity:1;transform:translate3d(0,calc(var(--y) + 20px),0)}to{opacity:0;transform:translate3d(0,2000px,0)}}.Toastify__bounce-enter--top-left,.Toastify__bounce-enter--bottom-left{animation-name:Toastify__bounceInLeft}.Toastify__bounce-enter--top-right,.Toastify__bounce-enter--bottom-right{animation-name:Toastify__bounceInRight}.Toastify__bounce-enter--top-center{animation-name:Toastify__bounceInDown}.Toastify__bounce-enter--bottom-center{animation-name:Toastify__bounceInUp}.Toastify__bounce-exit--top-left,.Toastify__bounce-exit--bottom-left{animation-name:Toastify__bounceOutLeft}.Toastify__bounce-exit--top-right,.Toastify__bounce-exit--bottom-right{animation-name:Toastify__bounceOutRight}.Toastify__bounce-exit--top-center{animation-name:Toastify__bounceOutUp}.Toastify__bounce-exit--bottom-center{animation-name:Toastify__bounceOutDown}@keyframes Toastify__zoomIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes Toastify__zoomOut{0%{opacity:1}50%{opacity:0;transform:translate3d(0,var(--y),0) scale3d(.3,.3,.3)}to{opacity:0}}.Toastify__zoom-enter{animation-name:Toastify__zoomIn}.Toastify__zoom-exit{animation-name:Toastify__zoomOut}@keyframes Toastify__flipIn{0%{transform:perspective(400px) rotateX(90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotateX(-20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotateX(10deg);opacity:1}80%{transform:perspective(400px) rotateX(-5deg)}to{transform:perspective(400px)}}@keyframes Toastify__flipOut{0%{transform:translate3d(0,var(--y),0) perspective(400px)}30%{transform:translate3d(0,var(--y),0) perspective(400px) rotateX(-20deg);opacity:1}to{transform:translate3d(0,var(--y),0) perspective(400px) rotateX(90deg);opacity:0}}.Toastify__flip-enter{animation-name:Toastify__flipIn}.Toastify__flip-exit{animation-name:Toastify__flipOut}@keyframes Toastify__slideInRight{0%{transform:translate3d(110%,0,0);visibility:visible}to{transform:translate3d(0,var(--y),0)}}@keyframes Toastify__slideInLeft{0%{transform:translate3d(-110%,0,0);visibility:visible}to{transform:translate3d(0,var(--y),0)}}@keyframes Toastify__slideInUp{0%{transform:translate3d(0,110%,0);visibility:visible}to{transform:translate3d(0,var(--y),0)}}@keyframes Toastify__slideInDown{0%{transform:translate3d(0,-110%,0);visibility:visible}to{transform:translate3d(0,var(--y),0)}}@keyframes Toastify__slideOutRight{0%{transform:translate3d(0,var(--y),0)}to{visibility:hidden;transform:translate3d(110%,var(--y),0)}}@keyframes Toastify__slideOutLeft{0%{transform:translate3d(0,var(--y),0)}to{visibility:hidden;transform:translate3d(-110%,var(--y),0)}}@keyframes Toastify__slideOutDown{0%{transform:translate3d(0,var(--y),0)}to{visibility:hidden;transform:translate3d(0,500px,0)}}@keyframes Toastify__slideOutUp{0%{transform:translate3d(0,var(--y),0)}to{visibility:hidden;transform:translate3d(0,-500px,0)}}.Toastify__slide-enter--top-left,.Toastify__slide-enter--bottom-left{animation-name:Toastify__slideInLeft}.Toastify__slide-enter--top-right,.Toastify__slide-enter--bottom-right{animation-name:Toastify__slideInRight}.Toastify__slide-enter--top-center{animation-name:Toastify__slideInDown}.Toastify__slide-enter--bottom-center{animation-name:Toastify__slideInUp}.Toastify__slide-exit--top-left,.Toastify__slide-exit--bottom-left{animation-name:Toastify__slideOutLeft;animation-timing-function:ease-in;animation-duration:.3s}.Toastify__slide-exit--top-right,.Toastify__slide-exit--bottom-right{animation-name:Toastify__slideOutRight;animation-timing-function:ease-in;animation-duration:.3s}.Toastify__slide-exit--top-center{animation-name:Toastify__slideOutUp;animation-timing-function:ease-in;animation-duration:.3s}.Toastify__slide-exit--bottom-center{animation-name:Toastify__slideOutDown;animation-timing-function:ease-in;animation-duration:.3s}@keyframes Toastify__spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Raleway:ital,wght@0,400;0,700;1,700&amp;display=swap" rel="stylesheet">
+
+    <title>Jazz in the Berkshires - sophisticated grooves and culture</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+
+<meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<link rel="canonical" href="https://jazzintheberkshires.org/">
+<meta name="description" content="The timeless allure of jazz, echoes of a bygone era that blends seamlessly with the vibrant beats of today.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Jazz in the Berkshires">
+<meta property="og:title" content="Jazz in the Berkshires - sophisticated grooves and culture">
+<meta property="og:description" content="The timeless allure of jazz, echoes of a bygone era that blends seamlessly with the vibrant beats of today.">
+<meta property="og:url" content="https://jazzintheberkshires.org/">
+<meta property="og:image" content="https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-logo.png">
+<meta property="og:image:width" content="348">
+<meta property="og:image:height" content="233">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jazz in the Berkshires - sophisticated grooves and culture">
+<meta name="twitter:description" content="The timeless allure of jazz, echoes of a bygone era that blends seamlessly with the vibrant beats of today.">
+<meta name="twitter:image" content="https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-logo.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://jazzintheberkshires.org/#/schema/WebSite","url":"https://jazzintheberkshires.org/","name":"Jazz in the Berkshires","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://jazzintheberkshires.org/search/{search_term_string}/"},"query-input":"required name=search_term_string"},"publisher":{"@id":"https://jazzintheberkshires.org/#/schema/Organization"}},{"@type":"WebPage","@id":"https://jazzintheberkshires.org/","url":"https://jazzintheberkshires.org/","name":"Jazz in the Berkshires &#x2d; sophisticated grooves and culture","description":"The timeless allure of jazz, echoes of a bygone era that blends seamlessly with the vibrant beats of today.","inLanguage":"en-US","isPartOf":{"@id":"https://jazzintheberkshires.org/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://jazzintheberkshires.org/#/schema/BreadcrumbList","itemListElement":{"@type":"ListItem","position":1,"name":"Jazz in the Berkshires"}},"potentialAction":{"@type":"ReadAction","target":"https://jazzintheberkshires.org/"},"about":{"@id":"https://jazzintheberkshires.org/#/schema/Organization"}},{"@type":"Organization","@id":"https://jazzintheberkshires.org/#/schema/Organization","name":"Jazz in the Berkshires","url":"https://jazzintheberkshires.org/","logo":{"@type":"ImageObject","url":"https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-logo.png","contentUrl":"https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-logo.png","width":348,"height":233,"contentSize":"7598"}}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="Jazz in the Berkshires » Feed" href="https://jazzintheberkshires.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="Jazz in the Berkshires » Comments Feed" href="https://jazzintheberkshires.org/comments/feed/">
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" id="wpedon-css" href="https://jazzintheberkshires.org/wp-content/plugins/easy-paypal-donation//assets/css/wpedon.css?ver=1.4.2" media="all">
+<!-- <link rel="stylesheet" id="jib-style-css" href="https://jazzintheberkshires.org/wp-content/themes/jib/style.css?ver=1.0.2" media="all"> -->
+<script src="https://jazzintheberkshires.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jazzintheberkshires.org/xmlrpc.php?rsd">
+<link rel="icon" href="https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-favicon-480x443.png" sizes="32x32">
+<link rel="icon" href="https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-favicon-480x443.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-favicon-480x443.png">
+<meta name="msapplication-TileImage" content="https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-favicon-480x443.png">
+</head>
+
+<body class="home wp-singular page-template page-template-tpl-events page-template-tpl-events-php page page-id-146 wp-custom-logo wp-theme-jib no-sidebar">
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://jazzintheberkshires.org/" rel="home" aria-current="page">
+                <img width="174" height="116" src="https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-logo.png" class="custom-logo d-inline-block align-top" alt="Jazz in the Berkshires" decoding="async" fetchpriority="high">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="menu-nav" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a class="nav-link" href="https://jazzintheberkshires.org/about/">About</a></li>
+                    <li class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a class="nav-link" href="https://jazzintheberkshires.org/directors/">Board</a></li>
+                    <li class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a class="nav-link" href="https://jazzintheberkshires.org/events/">Events</a></li>
+                    <li class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a class="nav-link" href="https://jazzintheberkshires.org/donate/">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="primary" class="site-main">
+
+
+<article id="post-146" class="post-146 page type-page status-publish hentry">
+
+<section class="c-hero js-hero">
+        <div class="container">
+            <h1 class="c-hero__title text-center">
+
+            The timeless allure of jazz, echoes of a bygone era that blends seamlessly with the vibrant beats of today.        </h1>
+        </div>
+
+            <div class="c-hero__image">
+            <img width="1920" height="1004" src="https://jazzintheberkshires.org/wp-content/uploads/2024/03/hero-ltr02.jpg" class="background-image" alt="the Clark Art Institute campus in Williamstown" decoding="async" srcset="https://jazzintheberkshires.org/wp-content/uploads/2024/03/hero-ltr02.jpg 1920w, https://jazzintheberkshires.org/wp-content/uploads/2024/03/hero-ltr02-960x502.jpg 960w, https://jazzintheberkshires.org/wp-content/uploads/2024/03/hero-ltr02-480x251.jpg 480w" sizes="(max-width: 1920px) 100vw, 1920px">        </div>
+    </section>
+
+<section id="coming-event" class="c-coming-event o-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                <img width="320" height="480" src="https://jazzintheberkshires.org/wp-content/uploads/2024/11/charlesdeluvio-AT5vuPoi8vc-unsplash-320x480.jpg" class="img-fluid rounded" alt="" decoding="async" srcset="https://jazzintheberkshires.org/wp-content/uploads/2024/11/charlesdeluvio-AT5vuPoi8vc-unsplash-320x480.jpg 320w, https://jazzintheberkshires.org/wp-content/uploads/2024/11/charlesdeluvio-AT5vuPoi8vc-unsplash-640x960.jpg 640w, https://jazzintheberkshires.org/wp-content/uploads/2024/11/charlesdeluvio-AT5vuPoi8vc-unsplash-1280x1920.jpg 1280w, https://jazzintheberkshires.org/wp-content/uploads/2024/11/charlesdeluvio-AT5vuPoi8vc-unsplash-scaled.jpg 1707w" sizes="(max-width: 320px) 100vw, 320px">
+            </div>
+            <div class="col-md-8">
+                <h2>With support from:</h2>
+                <p>&nbsp;</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <figure class="wp-caption text-center"><a href="https://massculturalcouncil.org/" rel="noopener"><img class="img-fluid" src="https://www.massculturalcouncil.org/wp-content/uploads/2019/01/MCC_Logo_RGB_NoTag.jpg" alt="Massachusetts Cultural Council" style="max-width: 200px;"></a><figcaption class="wp-caption-text small">Massachusetts Cultural Council</figcaption></figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <figure class="wp-caption text-center"><a href="https://www.platesbistro.com/" rel="noopener"><img src="https://jazzintheberkshires.org/wp-content/uploads/2024/11/Plates-2copy-1-394x480.jpg" alt="Plates Bistro" class="img-fluid" style="max-width: 200px;" data-name="image"></a><figcaption class="wp-caption-text small">Plates Bistro</figcaption></figure>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <figure class="wp-caption text-center"><a href="https://www.greylock.org/" rel="noopener"><img src="https://jazzintheberkshires.org/wp-content/uploads/2024/11/GFCU-433x289_rgb-002-002-1.jpg" alt="Greylock Federal Credit Union" class="img-fluid" style="max-width: 200px;" data-name="image"></a><figcaption class="wp-caption-text small">Greylock Federal Credit Union</figcaption></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="c-cta o-section py-5 bg-light">
+    <div class="container text-center">
+        <div class="c-cta__content">
+                            <h2>Stay Connected</h2>
+                            <p class="lead">Join us on a journey that celebrates both the rich legacy of jazz and the boundless potential of new, innovative artists.</p>
+<p><a href="https://conta.cc/4a0bFpw" class="btn btn-primary my-2" rel="noopener">Read our most recent newsletter!</a></p>
+<p>Want to stay in the loop? <a href="https://lp.constantcontactpages.com/sl/HQnY5KY" class="btn btn-secondary" rel="noopener">Sign up to receive our newsletter.</a></p>
+                    </div>
+    </div>
+</section>
+
+<section id="donate" class="c-donate o-section py-5">
+    <div class="container text-center">
+        <h2>Support Us</h2>
+        <!-- Content for donate section would go here -->
+        <p>Your contributions help us bring more jazz to the Berkshires!</p>
+        <a href="https://jazzintheberkshires.org/donate/" class="btn btn-success">Donate Now</a>
+    </div>
+</section>
+</article>
+
+    </main>
+
+
+<footer id="colophon" class="c-footer py-5 bg-dark text-white">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 text-center text-md-start">
+                <a href="https://jazzintheberkshires.org/" class="custom-logo-link" rel="home" aria-current="page"><img width="174" height="116" src="https://jazzintheberkshires.org/wp-content/uploads/2024/01/jazz-logo.png" class="custom-logo img-fluid" alt="Jazz in the Berkshires" decoding="async"></a>
+            </div>
+
+            <div class="col-md-4 mb-3 text-center text-md-start">
+                <h5>Contact Us</h5>
+                <p>Jazz in the Berkshires,<br>
+196 Bridges Road Williamstown,<br>
+MA 01267</p>
+<p><a href="mailto:info@jazzintheberkshires.org" class="text-white">info@jazzintheberkshires.org</a></p>
+            </div>
+
+            <div class="col-md-4 mb-3 text-center text-md-start">
+                <h5>Legal</h5>
+                <p class="small">© 2025 Jazz in the Berkshires. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/jib\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script src="https://js.stripe.com/v3/" id="stripe-js-js"></script>
+<script id="wpedon-js-extra">
+var wpedon = {"ajaxUrl":"https:\/\/jazzintheberkshires.org\/wp-admin\/admin-ajax.php","nonce":"479f12c03b","opens":"2","cancel":"","return":""};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://jazzintheberkshires.org/wp-content/plugins/easy-paypal-donation//assets/js/wpedon.js?ver=1.4.2" id="wpedon-js"></script>
+ <!-- <script src="https://jazzintheberkshires.org/wp-content/themes/jib/js/scripts.js?ver=1.0.2" id="jib-scripts-js"></script> -->
+ <!-- <script src="https://jazzintheberkshires.org/wp-content/themes/jib/js/navigation.js?ver=1.0.2" id="jib-navigation-js"></script> -->
+</body></html>
